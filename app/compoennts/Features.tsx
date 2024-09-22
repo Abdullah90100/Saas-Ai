@@ -127,7 +127,7 @@ export const Features = () => {
   const handleSelectedTab = (index: number) => {
     setSelectedTab(index);
     const animateOptions: ValueAnimationTransition = {
-      duration: 2,
+      duration:2.4,
       ease: "easeInOut",
     };
 
