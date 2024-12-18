@@ -5,7 +5,8 @@ import avatar1 from "../../public/avatar-1.png";
 import avatar2 from "../../public/avatar-2.png";
 import avatar3 from "../../public/avatar-3.png";
 import avatar4 from "../../public/avatar-4.png";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
+
 const testimonials = [
     {
         text: "This product has transformed the way we approach our marketing strategies. Highly recommended!",
@@ -35,27 +36,33 @@ const testimonials = [
 
 const Testimonials: React.FC = () => {
     return (
-        <section className='py-20 md:py-24 '>
+        <section className='py-20 md:py-24'>
             <div className='container mx-auto'>
-                <h2 className='text-5xl md:text-6xl tracking-tighter font-medium text-center'>Beyond Expectations</h2>
+                <h2 className='text-5xl md:text-6xl tracking-tighter font-medium text-center'>
+                    Multiverse Translator: Unlocking New Possibilities
+                </h2>
                 <p className='max-w-sm mx-auto lg:text-xl text-white/70 text-lg text-center mt-5 tracking-tight'>
-                    Our revoluionary AI SEO tools have transformed our client Startegies
+                    Translate seamlessly between video, images, and text with the power of AI. Unlock new possibilities for understanding across different mediums.
                 </p>
-                <div className='flex overflow-hidden mt-10 [mask-image:linear-gradient(to_right,transparent,black_20%,black_80%,transparent)] '>
+                <div className='flex overflow-hidden mt-10 [mask-image:linear-gradient(to_right,transparent,black_20%,black_80%,transparent)]'>
                     <motion.div 
-                    initial={{
-                        translateX:"-50%"
-                    }}
-                    animate={{
-                        translateX:"0"
-                    }}
-                    transition={{
-                        repeat:Infinity,
-                        ease:"linear",
-                        duration:50
-                    }}
-                    
-                    className='flex gap-5 flex-none'>
+                        initial={{
+                            translateX: "-50%"
+                        }}
+                        animate={{
+                            translateX: "0"
+                        }}
+                        transition={{
+                            repeat: Infinity,
+                            ease: "linear",
+                            duration: 50
+                        }}
+                        // whileHover={{
+                        //     translateX: 0,  // Stop the movement when hovered
+                        //     transition: { duration: 0.3, ease: "easeInOut" }
+                        // }}
+                        className='flex gap-5 flex-none'
+                    >
                         {[...testimonials, ...testimonials].map((test) => (
                             <div key={test.title} className='border border-white/15 p-6 md:p-10 rounded-xl bg-[linear-gradient(to_bottom_left,rgb(140,69,255,.3),black)] mb-5 max-w-xs md:max-w-md flex-none'>
                                 <div className='text-lg tracking-tight md:text-xl '>{test.text}</div>
@@ -69,7 +76,7 @@ const Testimonials: React.FC = () => {
                                     </div>
                                     <div>
                                         <div className='font-semibold'>{test.name}</div>
-                                        <div className='text-white/50 text-sm  '>{test.title}</div>
+                                        <div className='text-white/50 text-sm'>{test.title}</div>
                                     </div>
                                 </div>
                             </div>

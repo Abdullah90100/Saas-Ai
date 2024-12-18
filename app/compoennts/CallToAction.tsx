@@ -65,7 +65,7 @@ function CallToAction() {
                     <div
                         className='bg-blend-overlay absolute inset-0 bg-[rgb(74,32,138)] [mask-image:radial-gradient(50%_50%_at_50%_35%,black,transparent)] group-hover:opacity-0 transition-700'
                         style={{
-                            backgroundImage: `url(${GridLines.src})`
+                            backgroundImage:` url(${GridLines.src})`
                         }}
                     >
                     </div>
@@ -79,14 +79,16 @@ function CallToAction() {
                     >
                     </motion.div>
                     
+
                     {/* Content */}
                     <div className='relative'>
-                        <h2 className='text-5xl md:text-6xl max-w-sm mx-auto tracking-tighter text-center font-medium'>
-                            AI-driven SEO for Everyone
+                        <h2 className='text-5xl md:text-6xl max-w-full mx-auto tracking-tighter text-center font-medium'>
+                            Merging Media Seamlessly
                         </h2>
-                        <p className='text-center md:text-xl max-w-xs mx-auto text-white/70 px-4 text-lg mt-5 tracking-tight'>
-                            Achieve clear, impactful results without the complexity
+                        <p className='text-center md:text-xl max-w-full mx-auto text-white/70 px-4 text-lg mt-5 tracking-tight'>
+                            Experience effortless translation between videos, images, and text with cutting-edge AI technology.
                         </p>
+
                         <div className='flex justify-center mt-8'>
                             <Button>Join Waitlist</Button>
                         </div>
